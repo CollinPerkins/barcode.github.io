@@ -15,10 +15,10 @@ $(document).ready(function(){
 
     qrLot = qrObject.lot
 
-    image = JsBarcode("#barcode", expDate);
-    console.log(image);
-    image;
-    image = '<body><div id="barcode">' + image + '</div></body>';
+    '<body><div id="barcode">' + JsBarcode("#barcode", expDate, {
+      width:1,
+      height:10
+    }) + '</div></body>';
   })
 
   $('.qrPrint').click(function () {
