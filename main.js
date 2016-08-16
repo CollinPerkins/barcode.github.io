@@ -9,7 +9,10 @@ $(document).ready(function(){
     qrObject = JSON.parse(qrObject);
     expDate = qrObject.expDate;
     var indexOfT = expDate.indexOf('T');
-    expDate = expDate.slice(0, indexOfT);
+    if(indexOfT !== -1){
+      expDate = expDate.slice(0, indexOfT);
+    }
+
     qrLot = qrObject.lot
 
     image = JsBarcode("#barcode", expDate);
