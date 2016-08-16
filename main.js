@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     '<body><div id="barcode">' + JsBarcode("#barcode", expDate, {
       width:1,
-      height:10
+      height:40
     }) + '</div></body>';
   })
 
